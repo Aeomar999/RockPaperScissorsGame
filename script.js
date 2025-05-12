@@ -16,7 +16,10 @@ optionImages.forEach((image,index) => {
 
         let randomNumber = Math.floor(Math.random() * 3);
         let cpuImages = ["rock-paper-scissor-game-images/images/rock.png", "rock-paper-scissor-game-images/images/paper.png", "rock-paper-scissor-game-images/images/scissors.png"];
-        cpuImages.src = cpuImages[randomNumber];
+        cpuResult.src = cpuImages[randomNumber];
         let cpuValue = ["R", "P", "S"][randomNumber];
+        let userValue = ["R", "P", "S"][index];
+
+        console.log(cpuValue, userValue);
     });
 });
