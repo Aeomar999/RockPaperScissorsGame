@@ -31,3 +31,39 @@ body{
 .cpu_result img{
     transform: rotate(-90deg) rotateY(180deg);
 }
+.result{
+    text-align: center;
+    font-size: 2rem;
+    color: #7d2ae8;
+    margin-top: 1.5rem;
+}
+.option_images{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+
+}
+.option_image:hover{
+    opacity: 100%;
+}
+.option_image img{
+    pointer-events: none;
+}
+.option_image img {
+    width: 50px;
+}
+.option_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.option_image p{
+    color: #7d2ae8;
+    font-size: 1.24rem;
+    margin-top: 1rem;
+    pointer-events: none;
+}
